@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9625CA11D5D3BF3009F62FA /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9625CA01D5D3BF3009F62FA /* DragImg.swift */; };
 		F9E1E32C1D5BE015004C46C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1E32B1D5BE015004C46C6 /* AppDelegate.swift */; };
 		F9E1E32E1D5BE015004C46C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E1E32D1D5BE015004C46C6 /* ViewController.swift */; };
 		F9E1E3311D5BE015004C46C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E1E32F1D5BE015004C46C6 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F9625CA01D5D3BF3009F62FA /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
 		F9E1E3281D5BE015004C46C6 /* monsterRev1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = monsterRev1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E1E32B1D5BE015004C46C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9E1E32D1D5BE015004C46C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				F9E1E3321D5BE015004C46C6 /* Assets.xcassets */,
 				F9E1E3341D5BE015004C46C6 /* LaunchScreen.storyboard */,
 				F9E1E3371D5BE015004C46C6 /* Info.plist */,
+				F9625CA01D5D3BF3009F62FA /* DragImg.swift */,
 			);
 			path = monsterRev1;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9625CA11D5D3BF3009F62FA /* DragImg.swift in Sources */,
 				F9E1E32E1D5BE015004C46C6 /* ViewController.swift in Sources */,
 				F9E1E32C1D5BE015004C46C6 /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +292,7 @@
 				F9E1E33C1D5BE015004C46C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -33,6 +33,9 @@
                                     <constraint firstAttribute="height" constant="84" id="vI9-mD-qNV"/>
                                     <constraint firstAttribute="width" constant="240" id="vif-ve-4Yj"/>
                                 </constraints>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="180" y="-69" width="240" height="84"/>
+                                </variation>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="PuW-j6-nvs">
                                 <rect key="frame" x="205" y="38" width="182" height="50"/>
@@ -59,17 +62,9 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-7J-oxj">
-                                <rect key="frame" x="164" y="117" width="273" height="98"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="VsB-gQ-V55">
-                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="p3L-Zi-VMs">
-                                        <rect key="frame" x="178" y="0.0" width="95" height="98"/>
-                                    </imageView>
-                                </subviews>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="209" y="-52" width="182" height="50"/>
+                                </variation>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="1hX-kB-OFD">
                                 <rect key="frame" x="123" y="302" width="347" height="234"/>
@@ -78,35 +73,84 @@
                                     <constraint firstAttribute="height" constant="234" id="mbn-sk-i0b"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-7J-oxj">
+                                <rect key="frame" x="164" y="117" width="273" height="98"/>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="VsB-gQ-V55" customClass="DragImg" customModule="monsterRev1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="p3L-Zi-VMs" customClass="DragImg" customModule="monsterRev1" customModuleProvider="target">
+                                        <rect key="frame" x="178" y="0.0" width="95" height="98"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="MyD-wC-4nC"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MyD-wC-4nC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="vertical" misplaced="YES" spacing="30">
+                                    <rect key="frame" x="485" y="28" width="96" height="226"/>
+                                    <mask key="constraints">
+                                        <include reference="MyD-wC-4nC"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SvD-7J-oxj" firstAttribute="top" secondItem="BjU-3m-uRw" secondAttribute="bottom" constant="13" id="0yF-Jk-neC"/>
                             <constraint firstItem="PuW-j6-nvs" firstAttribute="centerX" secondItem="BjU-3m-uRw" secondAttribute="centerX" id="22N-u2-Ejh"/>
                             <constraint firstItem="SvD-7J-oxj" firstAttribute="top" secondItem="BjU-3m-uRw" secondAttribute="bottom" constant="13" id="5yX-cy-5vg"/>
                             <constraint firstItem="SvD-7J-oxj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6WE-g4-ixq"/>
+                            <constraint firstItem="SvD-7J-oxj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DYo-3J-Ex4"/>
                             <constraint firstItem="BjU-3m-uRw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iat-bW-Vor"/>
                             <constraint firstItem="1hX-kB-OFD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jao-U4-lAP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vL1-1n-GNs" secondAttribute="bottom" id="K0D-Bd-UwP"/>
+                            <constraint firstItem="SvD-7J-oxj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L6P-e8-bXT"/>
                             <constraint firstItem="la6-Dw-a0j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LSx-H0-I2j"/>
                             <constraint firstAttribute="trailing" secondItem="la6-Dw-a0j" secondAttribute="trailing" id="NVt-sz-sQo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="la6-Dw-a0j" secondAttribute="bottom" id="OEA-Uh-uwZ"/>
                             <constraint firstItem="la6-Dw-a0j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Q4p-bA-oRZ"/>
                             <constraint firstItem="PuW-j6-nvs" firstAttribute="centerY" secondItem="BjU-3m-uRw" secondAttribute="centerY" id="Sh2-ki-Rli"/>
                             <constraint firstItem="BjU-3m-uRw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ZCH-Ib-OLW"/>
+                            <constraint firstItem="SvD-7J-oxj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="goP-W2-154"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1hX-kB-OFD" secondAttribute="trailing" constant="110" id="hOe-JH-K6n"/>
                             <constraint firstItem="1hX-kB-OFD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="k3e-8S-k46"/>
                             <constraint firstItem="vL1-1n-GNs" firstAttribute="top" secondItem="1hX-kB-OFD" secondAttribute="bottom" id="le2-On-bOX"/>
                             <constraint firstItem="vL1-1n-GNs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="moa-jd-EVb"/>
+                            <constraint firstItem="SvD-7J-oxj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rhW-Ad-Mwa"/>
                             <constraint firstAttribute="trailing" secondItem="vL1-1n-GNs" secondAttribute="trailing" id="s3p-mU-hnV"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="5yX-cy-5vg"/>
+                                <exclude reference="6WE-g4-ixq"/>
+                                <exclude reference="DYo-3J-Ex4"/>
+                                <exclude reference="goP-W2-154"/>
+                                <exclude reference="rhW-Ad-Mwa"/>
                                 <exclude reference="hOe-JH-K6n"/>
                                 <exclude reference="k3e-8S-k46"/>
                             </mask>
                         </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="DYo-3J-Ex4"/>
+                                <exclude reference="L6P-e8-bXT"/>
+                                <include reference="rhW-Ad-Mwa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="goP-W2-154"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImg" destination="p3L-Zi-VMs" id="S6N-qO-Fy0"/>
+                        <outlet property="heartImg" destination="VsB-gQ-V55" id="5Vn-Ut-fpX"/>
                         <outlet property="monsterImg" destination="1hX-kB-OFD" id="haq-0p-dKN"/>
                     </connections>
                 </viewController>
