@@ -22,8 +22,8 @@ class DragImg: UIImageView {
     
     required init? (coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    
     }
+    
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         originalPosition = self.center
