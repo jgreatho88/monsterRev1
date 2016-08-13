@@ -79,9 +79,11 @@
                                 <rect key="frame" x="123" y="302" width="347" height="234"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="347" id="fKW-Xp-9co">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="347"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="270"/>
                                     </constraint>
-                                    <constraint firstAttribute="height" constant="234" id="mbn-sk-i0b"/>
+                                    <constraint firstAttribute="height" constant="234" id="mbn-sk-i0b">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="180"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="SvD-7J-oxj">

@@ -20,5 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("itemDroppedOnCharacter:"), name: "onTargetDropped", object: nil )
+        
  }
 }
